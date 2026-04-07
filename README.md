@@ -54,9 +54,7 @@ A full-featured backend system for managing financial records, users, and role-b
     ```
 
 3. Update database credentials in application.properties
-   ```bash
-      nano src/main/resources/application.properties
-   ```
+  
  Example content:
   ```bash
   spring.datasource.url=jdbc:mysql://localhost:3306/finance_db
