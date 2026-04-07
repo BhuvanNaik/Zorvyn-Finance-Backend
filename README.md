@@ -52,6 +52,7 @@ A full-featured backend system for managing financial records, users, and role-b
    ```bash
       mysql -u root -p -e "CREATE DATABASE finance_db;"
     ```
+
 3. Update database credentials in application.properties
    ```bash
       nano src/main/resources/application.properties
