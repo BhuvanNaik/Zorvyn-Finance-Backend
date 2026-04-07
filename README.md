@@ -64,7 +64,7 @@ A full-featured backend system for managing financial records, users, and role-b
   spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
   ```
 
-5. Build the project with Maven
+4. Build the project with Maven
  ```bash
   mvn clean install
   ```
