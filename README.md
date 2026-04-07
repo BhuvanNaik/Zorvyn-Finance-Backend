@@ -47,16 +47,31 @@ A full-featured backend system for managing financial records, users, and role-b
     ```bash
       git clone https://github.com/BhuvanNaik/Zorvyn-Finance-Backend.git
       cd finance-backend
-2.Update application.properties with your DB credentials:
-  ```bash
-    spring.datasource.url=jdbc:mysql://localhost:3306/finance_db
-    spring.datasource.username=root
-    spring.datasource.password=yourpassword
-    spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+# 2️⃣ Create MySQL database (replace password as needed)
+mysql -u root -p -e "CREATE DATABASE finance_db;"
 
-3. Build and run:
-  ```bash
-    mvn clean install
-    mvn spring-boot:run
+# 3️⃣ Update database credentials in application.properties
+# (open the file and replace username/password as needed)
+nano src/main/resources/application.properties
+# Example content:
+# spring.datasource.url=jdbc:mysql://localhost:3306/finance_db
+# spring.datasource.username=root
+# spring.datasource.password=yourpassword
+# spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
-4. Open index.html in browser and test login and dashboard features.
+# 4️⃣ Build the project with Maven
+mvn clean install
+
+# 5️⃣ Run the Spring Boot application
+mvn spring-boot:run
+
+# 6️⃣ Open the frontend in browser (adjust path if needed)
+xdg-open src/main/resources/static/index.html  # Linux
+# OR
+open src/main/resources/static/index.html      # macOS
+# OR manually open index.html in browser on Windows
+
+# 7️⃣ Test the features:
+# - Login using an email/password from DB
+# - Add records (Income / Expense)
+# - Verify dashboard summary updates automatically
