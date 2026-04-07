@@ -58,10 +58,10 @@ A full-featured backend system for managing financial records, users, and role-b
   
  Example content:
   ```properties
-  spring.datasource.url=jdbc:mysql://localhost:3306/finance_db
-  spring.datasource.username=root
-  spring.datasource.password=yourpassword
-  spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+    spring.datasource.url=jdbc:mysql://localhost:3306/finance_db
+    spring.datasource.username=root
+    spring.datasource.password=yourpassword
+    spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
   ```
 
 4. Build the project with Maven
