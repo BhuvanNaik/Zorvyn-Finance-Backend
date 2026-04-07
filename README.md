@@ -48,6 +48,7 @@ A full-featured backend system for managing financial records, users, and role-b
       git clone https://github.com/BhuvanNaik/Zorvyn-Finance-Backend.git
       cd finance-backend
     ```
+    
  2️. Create MySQL database (replace password as needed)
    ```bash
       mysql -u root -p -e "CREATE DATABASE finance_db;"
