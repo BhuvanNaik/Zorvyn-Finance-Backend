@@ -57,7 +57,7 @@ A full-featured backend system for managing financial records, users, and role-b
 3. Update database credentials in application.properties
   
  Example content:
-  ```bash
+  ```properties
   spring.datasource.url=jdbc:mysql://localhost:3306/finance_db
   spring.datasource.username=root
   spring.datasource.password=yourpassword
