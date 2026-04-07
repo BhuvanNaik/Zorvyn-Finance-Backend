@@ -50,30 +50,36 @@ A full-featured backend system for managing financial records, users, and role-b
     
  2️. Create MySQL database (replace password as needed)
  ```bash
-mysql -u root -p -e "CREATE DATABASE finance_db;"
+
+      mysql -u root -p -e "CREATE DATABASE finance_db;"
 
 3. Update database credentials in application.properties
-# (open the file and replace username/password as needed)
-nano src/main/resources/application.properties
-# Example content:
-# spring.datasource.url=jdbc:mysql://localhost:3306/finance_db
-# spring.datasource.username=root
-# spring.datasource.password=yourpassword
-# spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+ nano src/main/resources/application.properties
+ Example content:
+ spring.datasource.url=jdbc:mysql://localhost:3306/finance_db
+spring.datasource.username=root
+spring.datasource.password=yourpassword
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
-# 4️⃣ Build the project with Maven
+4. Build the project with Maven
+ ```bash
+
 mvn clean install
 
-# 5️⃣ Run the Spring Boot application
+5. Run the Spring Boot application
+ ```bash
+
 mvn spring-boot:run
 
-# 6️⃣ Open the frontend in browser (adjust path if needed)
-xdg-open src/main/resources/static/index.html  # Linux
-# OR
-open src/main/resources/static/index.html      # macOS
-# OR manually open index.html in browser on Windows
+6. Open the frontend in browser (adjust path if needed)
+ ```bash
 
-# 7️⃣ Test the features:
+xdg-open src/main/resources/static/index.html  # Linux
+OR
+open src/main/resources/static/index.html      # macOS
+ OR manually open index.html in browser on Windows
+
+7. Test the features:
 # - Login using an email/password from DB
 # - Add records (Income / Expense)
 # - Verify dashboard summary updates automatically
