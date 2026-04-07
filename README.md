@@ -48,15 +48,13 @@ A full-featured backend system for managing financial records, users, and role-b
       git clone https://github.com/BhuvanNaik/Zorvyn-Finance-Backend.git
       cd finance-backend
 2.Update application.properties with your DB credentials:
+  ```bash
     spring.datasource.url=jdbc:mysql://localhost:3306/finance_db
     spring.datasource.username=root
     spring.datasource.password=yourpassword
     spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 3. Build and run:
+  ```bash
     mvn clean install
     mvn spring-boot:run
 4. Open index.html in browser and test login and dashboard features.
-
-```bash
-git clone https://github.com/<your-username>/finance-backend-dashboard.git
-cd finance-backend-dashboard
